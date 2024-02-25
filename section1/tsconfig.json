@@ -1,6 +1,12 @@
 {
   "compilerOptions": {
-    "target": "ESNext"
+    "target": "ESNext", // 버전 옵션
+    "module": "ESNext", // 상황에 따른 모듈 시스템 설정
+    "outDir": "dist", // tsc 사용시 js 파일들이 생성되는 곳
+    "strict": false, // 엄격한 타입 검사
+    "moduleDetection": "force", // 각각의 ts 파일을 독립적으로 판단
+    "skipLibCheck": true // 불 필요한 타입 정의 파일의 타입 검사 생략
   },
-  "include": ["src"]
+  "include": ["src"], // src 아래의 모든 ts 파일들을 컴파일
+  
 }
