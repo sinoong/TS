@@ -7,6 +7,8 @@
     "strict": true, // 엄격한 타입 검사 여부 설정
     "moduleDetection": "force", // 각각의 ts 파일을 독립적으로 판단, 모든 타입스크립트 파일(.ts)에 export 키워드를 자동으로 추가하여 격리된 모듈로 취급되도록 만드는 옵션
     "allowJs": true, // js 파일도 허용해라
+    "esModuleInterop": true, // ReactDOM, React 등 import 받아올 수 있게 해 줌 
+    "jsx": "react-jsx", // jsx 사용 가능하게
     "skipLibCheck": true // 불 필요한 타입 정의 파일의 타입 검사 생략
   },
   "include": ["src"] // src 아래의 모든 ts 파일들을 컴파일, tsc로 컴파일 할 타입스크립트 파일의 범위 설정
